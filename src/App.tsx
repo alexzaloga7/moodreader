@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/moodgallery" element={<MoodGallery />} />
+          <Route path="/moodgallery/:name" element={<MoodGallery />} />
           <Route path="/moodsummary" element={<MoodSummary />} />
         </Routes>
       </BrowserRouter>
