@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/moodgallery/:name" element={<MoodGallery />} />
-          <Route path="/moodsummary" element={<MoodSummary />} />
+          <Route path="/moodsummary" element={<MoodSummary/>} />
         </Routes>
       </BrowserRouter>
     </div>
