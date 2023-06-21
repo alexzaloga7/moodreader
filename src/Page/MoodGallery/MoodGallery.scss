@@ -1,3 +1,18 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/variables" as *;
+.mood-options {
+  display: flex;
+  flex-direction: row; /* Change flex-direction to row */
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.mood-button {
+  height: 9rem;
+  margin: 1rem;
+  width: 12rem;
+  border-radius: 0.5rem;
+  background-color: white;
+}

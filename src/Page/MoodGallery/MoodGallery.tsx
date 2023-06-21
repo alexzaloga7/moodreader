@@ -1,4 +1,5 @@
 import { useNavigate, useLocation } from "react-router-dom";
+import "./MoodGallery.scss";
 
 // eslint-disable-next-line
 interface MoodGalleryName {
@@ -18,32 +19,75 @@ const MoodGallery: React.FC = () => {
       <h1>Welcome {name}</h1>
       <h2> What's your mood today?</h2>
       <div className="mood-options">
-        <button id="happy" onClick={() => moodHandler("happy")}>
+        <button
+          className="mood-button"
+          id="happy"
+          onClick={() => moodHandler("happy")}
+        >
           Happy
         </button>
-        <button id="clarity" onClick={() => moodHandler("clarity")}>
-          Clarity
+        <button
+          className="mood-button"
+          id="forest"
+          onClick={() => moodHandler("forest")}
+        >
+          Forest
         </button>
-        <button id="calm" onClick={() => moodHandler("calm")}>
+        <button
+          className="mood-button"
+          id="calm"
+          onClick={() => moodHandler("calm")}
+        >
           Calm
         </button>
-        <button id="groundness" onClick={() => moodHandler("groundness")}>
+        <button
+          className="mood-button"
+          id="groundness"
+          onClick={() => moodHandler("groundness")}
+        >
           Groundness
         </button>
-        <button id="joy" onClick={() => moodHandler("joy")}>
+        <button
+          className="mood-button"
+          id="joy"
+          onClick={() => moodHandler("joy")}
+        >
           Joy
         </button>
-        <button id="renewal" onClick={() => moodHandler("renewal")}>
+        <button
+          className="mood-button"
+          id="renewal"
+          onClick={() => moodHandler("renewal")}
+        >
           Renewal
         </button>
-        <button id="gratitude" onClick={() => moodHandler("gratitude")}>
+        <button
+          className="mood-button"
+          id="gratitude"
+          onClick={() => moodHandler("gratitude")}
+        >
           Gratitude
         </button>
-        <button id="balance" onClick={() => moodHandler("balance")}>
+        <button
+          className="mood-button"
+          id="balance"
+          onClick={() => moodHandler("balance")}
+        >
           Balance
         </button>
-        <button id="awareness" onClick={() => moodHandler("awareness")}>
+        <button
+          className="mood-button"
+          id="awareness"
+          onClick={() => moodHandler("awareness")}
+        >
           Awareness
+        </button>
+        <button
+          className="mood-button"
+          id="zen"
+          onClick={() => moodHandler("zen")}
+        >
+          Zen
         </button>
       </div>
     </div>
