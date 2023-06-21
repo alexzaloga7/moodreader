@@ -2,20 +2,18 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./LandingPage.scss";
 
-const LandingPage: React.FC = () => {
+const LandingPage: React.FunctionComponent = () => {
   const navigate = useNavigate();
 
-  function handleFormSubmit(event: React.FormEvent) {
+  function handleFormSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const form = event.currentTarget as HTMLFormElement;
+    const form = event.currentTarget;
     const name = form.elements.namedItem("name") as HTMLInputElement;
-
+    navigate("/moodgallery", { state: { event } });
     if (name.value.trim() === "") {
       alert("Please enter your name.");
       return;
     }
-
-    navigate(`/moodgallery/${name.value}`);
   }
 
   return (
