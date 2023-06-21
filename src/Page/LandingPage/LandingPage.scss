@@ -1,3 +1,46 @@
-@use "../../styles/partials/mixins" as *;
-@use "../../styles/partials/typography" as *;
-@use "../../styles/partials/variables" as *;
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 20rem;
+}
+
+.landing-header {
+  font-size: 2.5rem;
+}
+
+.landing-subheader {
+  font-size: 1.5rem;
+}
+
+.landing-form {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Add this line */
+}
+.landing-input {
+  margin-bottom: 3rem;
+  width: 13rem;
+  height: 2rem;
+  border: none;
+  border-bottom: 1.5px solid grey;
+  text-align: center; /* Add this line */
+  background-color: white; /* Add this line to set the background to white */
+}
+
+.landing-input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1.5px solid transparent;
+  border-image: linear-gradient(to right, #00a8ff, #00fdd9) 1;
+}
+.landing-button {
+  margin-bottom: 2rem;
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  padding: 0.45rem;
+}
