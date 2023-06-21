@@ -1,10 +1,7 @@
-import "../MoodSummary/MoodSummary.scss";
-import {useNavigate, useLocation } from "react-router-dom";
-
-
+import React from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const MoodSummary: React.FC = () => {
-
   const navigate = useNavigate();
   const location = useLocation();
   const mood = location.state && location.state.mood;
@@ -14,62 +11,61 @@ const MoodSummary: React.FC = () => {
     return null;
   }
 
-  if (mood === "happy"){
-    return  <div>
-    <iframe
-      width="100%"
-      height="166"
-      scrolling="no"
-      frameBorder="no"
-      allow="autoplay"
-      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/256044882&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-    />
-    <div
-      style={{
-        fontSize: "10px",
-        color: "#cccccc",
-        lineBreak: "anywhere",
-        wordBreak: "normal",
-        overflow: "hidden",
-        whiteSpace: "nowrap",
-        textOverflow: "ellipsis",
-        fontFamily:
-          "Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif",
-        fontWeight: 100,
-      }}
-    >
-      <a
-        href="https://soundcloud.com/brunomars"
-        title="brunomars"
-        target="_blank"
-        style={{ color: "#cccccc", textDecoration: "none" }}
-      >
-        brunomars
-      </a>{" "}
-      ·{" "}
-      <a
-        href="https://soundcloud.com/brunomars/talking-to-the-moon-1"
-        title="Bruno Mars - Talking to the Moon"
-        target="_blank"
-        style={{ color: "#cccccc", textDecoration: "none" }}
-      >
-        Bruno Mars - Talking to the Moon
-      </a>
-    </div>
-  </div>
+  if (mood === "happy") {
+    return (
+      <div>
+        <iframe
+          width="100%"
+          height="166"
+          scrolling="no"
+          frameBorder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/256044882&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        />
+        <div
+          style={{
+            fontSize: "10px",
+            color: "#cccccc",
+            lineBreak: "anywhere",
+            wordBreak: "normal",
+            overflow: "hidden",
+            whiteSpace: "nowrap",
+            textOverflow: "ellipsis",
+            fontFamily:
+              "Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif",
+            fontWeight: 100,
+          }}
+        >
+          <a
+            href="https://soundcloud.com/brunomars"
+            title="brunomars"
+            target="_blank"
+            style={{ color: "#cccccc", textDecoration: "none" }}
+          >
+            brunomars
+          </a>{" "}
+          ·{" "}
+          <a
+            href="https://soundcloud.com/brunomars/talking-to-the-moon-1"
+            title="Bruno Mars - Talking to the Moon"
+            target="_blank"
+            style={{ color: "#cccccc", textDecoration: "none" }}
+          >
+            Bruno Mars - Talking to the Moon
+          </a>
+        </div>
+      </div>
+    );
   }
+
   return (
     <div className="mood-summary">
-       <p>Your selected mood: {mood}</p>
+      <p>Your selected mood: {mood}</p>
     </div>
   );
 };
 
 export default MoodSummary;
-
-
-
-
 ///explanation for why we're not using useState and instead leveraging the useLocation React hook
 //In the previous approach using React Router's route state, the state is still being set and passed between components, but it is managed by React Router itself rather than using local component state.
 // In the code snippet I provided, when the moodHandler function is called, the selected mood is passed as route state using navigate("/moodsummary", { state: { mood } }). This sets the state for the /moodsummary route.

@@ -8,8 +8,7 @@ interface MoodGalleryName {
 const MoodGallery: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  let event = location.state && location.state.event;
-  let name = event.target.name.value;
+  let name = location.state && location.state.name;
 
   function moodHandler(mood: string) {
     navigate("/moodsummary", { state: { mood } });
@@ -22,29 +21,29 @@ const MoodGallery: React.FC = () => {
         <button id="happy" onClick={() => moodHandler("happy")}>
           Happy
         </button>
-        <button id="joyful" onClick={() => moodHandler("joyful")}>
-          Joyful
-        </button>
-        <button id="sad" onClick={() => moodHandler("sad")}>
-          Sad
-        </button>
-        <button id="angry" onClick={() => moodHandler("angry")}>
-          Angry
-        </button>
-        <button id="anxious" onClick={() => moodHandler("anxious")}>
-          Anxious
-        </button>
-        <button id="scared" onClick={() => moodHandler("scared")}>
-          Scared
-        </button>
-        <button id="exhausted" onClick={() => moodHandler("exhausted")}>
-          Exhausted
-        </button>
-        <button id="curious" onClick={() => moodHandler("curious")}>
-          Curious
+        <button id="clarity" onClick={() => moodHandler("clarity")}>
+          Clarity
         </button>
         <button id="calm" onClick={() => moodHandler("calm")}>
           Calm
+        </button>
+        <button id="groundness" onClick={() => moodHandler("groundness")}>
+          Groundness
+        </button>
+        <button id="joy" onClick={() => moodHandler("joy")}>
+          Joy
+        </button>
+        <button id="renewal" onClick={() => moodHandler("renewal")}>
+          Renewal
+        </button>
+        <button id="gratitude" onClick={() => moodHandler("gratitude")}>
+          Gratitude
+        </button>
+        <button id="balance" onClick={() => moodHandler("balance")}>
+          Balance
+        </button>
+        <button id="awareness" onClick={() => moodHandler("awareness")}>
+          Awareness
         </button>
       </div>
     </div>
