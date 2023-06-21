@@ -8,8 +8,8 @@ interface MoodGalleryName {
 const MoodGallery: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const event = location.state && location.state.event;
-  const name = event.target.name.value;
+  let event = location.state && location.state.event;
+  let name = event.target.name.value;
 
   function moodHandler(mood: string) {
     navigate("/moodsummary", { state: { mood } });
