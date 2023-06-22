@@ -1,11 +1,24 @@
 import "./Focus.scss";
 import moods from "../../Data/moods.json";
+import FocusImage from "../../Assets/Images/Focus.png";
 
 const Focus: React.FC = () => {
   return (
-    <section>
+    <section className="focus">
+      <h2 className="focus-header">Focus</h2>
+
+      <img
+        src={FocusImage}
+        alt="Focus Meditation Image"
+        className="focus-image"
+      />
+      <h3 className="focus-quote">
+        Train your mind to be a fortress of concentration, impervious to
+        distractions.
+      </h3>
       <div>
         <iframe
+          className="focus-song"
           width="100%"
           height="166"
           scrolling="no"
@@ -46,8 +59,8 @@ const Focus: React.FC = () => {
           </a>
         </div>
       </div>
-      <p>{moods[0].environment}</p>
-      </section>
+      <h3 className="focus-recommendation"></h3>
+    </section>
   );
 };
 
