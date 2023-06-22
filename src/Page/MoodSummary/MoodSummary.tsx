@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import Focus from "../../Components/Focus/Focus";
 
 const MoodSummary: React.FC = () => {
   const navigate = useNavigate();
@@ -10,51 +11,10 @@ const MoodSummary: React.FC = () => {
     navigate("/"); // Redirect to the MoodGallery page if no mood is available
     return null;
   }
-
-  if (mood === "happy") {
+  
+  if (mood === "focus") {
     return (
-      <div>
-        <iframe
-          width="100%"
-          height="166"
-          scrolling="no"
-          frameBorder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/256044882&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        />
-        <div
-          style={{
-            fontSize: "10px",
-            color: "#cccccc",
-            lineBreak: "anywhere",
-            wordBreak: "normal",
-            overflow: "hidden",
-            whiteSpace: "nowrap",
-            textOverflow: "ellipsis",
-            fontFamily:
-              "Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif",
-            fontWeight: 100,
-          }}
-        >
-          <a
-            href="https://soundcloud.com/brunomars"
-            title="brunomars"
-            target="_blank"
-            style={{ color: "#cccccc", textDecoration: "none" }}
-          >
-            brunomars
-          </a>{" "}
-          ·{" "}
-          <a
-            href="https://soundcloud.com/brunomars/talking-to-the-moon-1"
-            title="Bruno Mars - Talking to the Moon"
-            target="_blank"
-            style={{ color: "#cccccc", textDecoration: "none" }}
-          >
-            Bruno Mars - Talking to the Moon
-          </a>
-        </div>
-      </div>
+      <Focus/>
     );
   }
 

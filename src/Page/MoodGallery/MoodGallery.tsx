@@ -17,57 +17,33 @@ const MoodGallery: React.FC = () => {
   return (
     <div className="mood-gallery">
       <h1>Welcome {name}</h1>
-      <h2> What's your mood today?</h2>
+      <h2> What are you aiming for?</h2>
       <div className="mood-options">
+        
         <button
           className="mood-button"
-          id="happy"
-          onClick={() => moodHandler("happy")}
+          id="focus"
+          onClick={() => moodHandler("focus")}
         >
-          Happy
+          Focus
         </button>
+  
         <button
           className="mood-button"
-          id="forest"
-          onClick={() => moodHandler("forest")}
+          id="Relax"
+          onClick={() => moodHandler("relax")}
         >
-          Forest
+          Relax
         </button>
+
         <button
           className="mood-button"
-          id="calm"
-          onClick={() => moodHandler("calm")}
+          id="energize"
+          onClick={() => moodHandler("energize")}
         >
-          Calm
+          Energize
         </button>
-        <button
-          className="mood-button"
-          id="groundness"
-          onClick={() => moodHandler("groundness")}
-        >
-          Groundness
-        </button>
-        <button
-          className="mood-button"
-          id="joy"
-          onClick={() => moodHandler("joy")}
-        >
-          Joy
-        </button>
-        <button
-          className="mood-button"
-          id="renewal"
-          onClick={() => moodHandler("renewal")}
-        >
-          Renewal
-        </button>
-        <button
-          className="mood-button"
-          id="gratitude"
-          onClick={() => moodHandler("gratitude")}
-        >
-          Gratitude
-        </button>
+
         <button
           className="mood-button"
           id="balance"
@@ -75,20 +51,7 @@ const MoodGallery: React.FC = () => {
         >
           Balance
         </button>
-        <button
-          className="mood-button"
-          id="awareness"
-          onClick={() => moodHandler("awareness")}
-        >
-          Awareness
-        </button>
-        <button
-          className="mood-button"
-          id="zen"
-          onClick={() => moodHandler("zen")}
-        >
-          Zen
-        </button>
+        
       </div>
     </div>
   );
