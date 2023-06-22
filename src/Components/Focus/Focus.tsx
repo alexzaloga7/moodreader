@@ -59,7 +59,6 @@ const Focus: React.FC = () => {
           </a>
         </div>
       </div>
-      <h3 className="focus-recommendation">{moods[0].environment}</h3>
     </section>
   );
 };
