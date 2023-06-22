@@ -3,21 +3,22 @@
     "mood": "focus",
     "image": "",
     "quote": "Embrace the power of single-pointed attention, for it is the gateway to unlocking your full potential.",
-    "song": "https://on.soundcloud.com/vRhoF"
+    "song": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/860324063&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
   },
   {
     "mood": "relax",
     "quote": "Unwind and let the worries of the day melt away.",
-    "song": "https://on.soundcloud.com/JTW8H"
+    "song": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/145707374&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
   },
   {
     "mood": "energize",
     "quote": "Harness the energy of possibility and let it propel you forward.",
-    "song": "https://on.soundcloud.com/rRiQP"
+    "song": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1553729695&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
   },
   {
     "mood": "balance",
     "quote": "Embrace equilibrium and find serenity in the ebb and flow of life.",
-    "song": "https://on.soundcloud.com/HEpND"
+    "song": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1289004109&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
   }
 ]
+
