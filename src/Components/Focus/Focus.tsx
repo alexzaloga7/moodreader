@@ -1,6 +1,6 @@
 import "./Focus.scss";
 import moods from "../../Data/moods.json";
-import FocusImage from "../../Assets/Images/Focus.png";
+import FocusImage from "../../Assets/Images/focusimage.svg";
 
 const Focus: React.FC = () => {
   return (
