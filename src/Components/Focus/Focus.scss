@@ -1,0 +1,32 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
+.focus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.focus-header {
+  font-size: 2rem;
+  margin-top: 8rem;
+}
+
+.focus-image {
+  width: 15rem;
+}
+
+.focus-quote {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.focus-song {
+  width: 4rem;
+}
+
+.focus-recommendation {
+  font-size: 1rem;
+}
