@@ -1,24 +1,23 @@
-import "./Focus.scss";
+import "./Relax.scss";
 import { useState } from "react";
-
 import moods from "../../Data/moods.json";
-import FocusImage from "../../Assets/Images/focussummary.svg";
+import RelaxImage from "../../Assets/Images/relaxsummary.svg";
 import Timer from "../Timer/Timer";
 // import MusicPlayerFrame from "../../Assets/Images/Untitled design (26).svg";
 
-const Focus: React.FC = () => {
+const Relax: React.FC = () => {
   const [showText, setShowText] = useState(true);
 
   const toggleTextVisibility = () => {
     setShowText((prevShowText) => !prevShowText);
   };
   return (
-    <section className="focus">
-      <div className="focus-header__container">
-        <h2 className="focus-header">{moods[0]?.mood}</h2>
+    <section className="relax">
+      <div className="relax-header__container">
+        <h2 className="relax-header">{moods[1]?.mood}</h2>
       </div>
-      <div className="focus-image__container">
-        <img src={FocusImage} alt="Focus Meditation" className="focus-image" />
+      <div className="relax-image__container">
+        <img src={RelaxImage} alt="Relax Meditation" className="relax-image" />
       </div>
       <Timer />
 
@@ -27,18 +26,18 @@ const Focus: React.FC = () => {
         alt="Focus Meditation Image"
         className="focus-imageplayer"
       /> */}
-      <div className="focus-musicplayer__border"></div>
-      <div className="focus-musicplayer">
+      <div className="relax-musicplayer__border"></div>
+      <div className="relax-musicplayer">
         <iframe
-          className="focus-musicplayer__iframe"
-          title="focus-music"
+          className="relax-musicplayer__iframe"
+          title="relax-music"
           id="soundCloudPlayer"
           width="20%"
           height="90"
           scrolling="no"
           frameBorder="no"
           allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1367255443&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/181443158&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
         ></iframe>
         <div
           style={{
@@ -57,15 +56,15 @@ const Focus: React.FC = () => {
         ></div>
       </div>
 
-      <div className="focus-text__container">
-        <button className="focus-text__button" onClick={toggleTextVisibility}>
+      <div className="relax-text__container">
+        <button className="relax-text__button" onClick={toggleTextVisibility}>
           {showText ? "Hide Text" : "Show Text"}
 
-          {showText && <p className="focus-text">{moods[0]?.meditation}</p>}
+          {showText && <p className="relax-text">{moods[1]?.meditation}</p>}
         </button>
       </div>
     </section>
   );
 };
 
-export default Focus;
+export default Relax;

@@ -2,7 +2,7 @@
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/variables" as *;
 
-.focus {
+.balance {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,78 +10,73 @@
   background-color: #ffffff;
 }
 
-.focus-header__container {
+.balance-header__container {
   display: flex;
   justify-content: flex-end;
   width: 100%;
 }
 
-.focus-header {
+.balance-header {
   font-size: 4rem;
   display: flex;
 }
 
-.focus-image__container {
-  border: 2px solid rgb(236, 123, 63);
-  background-color: rgba(252, 104, 24, 0.8);
+.balance-image__container {
+  background-color: rgba(58, 210, 99, 0.8);
   border-radius: 50%;
   width: 20rem;
   height: 20em;
-
   display: flex;
   justify-content: center;
   transform: scale(1);
-  animation: pulse-focus 7s infinite;
+  animation: pulse-balance 7s infinite;
 }
 
-@keyframes pulse-focus {
+@keyframes pulse-balance {
   0% {
     transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(234, 99, 36, 0.7);
+    box-shadow: 0 0 0 0 rgba(65, 198, 122, 0.8);
   }
 
   70% {
     transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 10px rgba(124, 235, 110, 0.8);
   }
 
   100% {
     transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(118, 234, 120, 0.8);
   }
 }
 
-.focus-image {
-  width: 15rem;
-
-  // position: relative;
-  // bottom: 20em;
-  // z-index: 0;
+.balance-image {
+  width: 26rem;
+  height: 20rem;
 }
 
-.focus-quote {
+.balance-quote {
   font-size: 1rem;
   text-align: center;
 }
 
-.focus-song {
+.balance-song {
   width: 4rem;
 }
 
-.focus-recommendation {
+.balance-recommendation {
   font-size: 1rem;
 }
 
-.focus-text {
+.balance-text {
   padding: 1rem;
 }
 
-.focus-musicplayer {
+.balance-musicplayer {
   display: flex;
   justify-content: center;
 }
 
-.focus-musicplayer__border {
+.balance-musicplayer__border {
   border-bottom: 32px solid rgb(255, 255, 255);
   width: 5rem;
   position: relative;
@@ -89,13 +84,13 @@
   z-index: 1;
 }
 
-.focus-text__container {
+.balance-text__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.focus-text__button {
+.balance-text__button {
   margin-top: 1rem;
   border-radius: 2rem;
   z-index: 1;
