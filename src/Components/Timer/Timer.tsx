@@ -61,40 +61,42 @@ export default function Timer(): JSX.Element {
       }, 1000);
       return () => clearInterval(interval);
     }
-  }, [isRunning]);
+  }, [isRunning, duration]);
 
   return (
     <Fragment>
-      <div className="App">
+      <div className="timer">
         <div className="time">
           {currentMinutes}
           <span className="mx-3">:</span>
           {currentSeconds}
         </div>
-        {!isRunning && !isStop && (
-          <button className="timer-button" onClick={startHandler}>
-            START
-          </button>
-        )}
-        {isRunning && (
-          <button className="timer-button" onClick={stopHandler}>
-            STOP
-          </button>
-        )}
+        <div className="time-button__container">
+          {!isRunning && !isStop && (
+            <button className="timer-button" onClick={startHandler}>
+              START
+            </button>
+          )}
+          {isRunning && (
+            <button className="timer-button" onClick={stopHandler}>
+              STOP
+            </button>
+          )}
 
-        {isStop && (
-          <button className="timer-button" onClick={resumeHandler}>
-            RESUME
-          </button>
-        )}
+          {isStop && (
+            <button className="timer-button" onClick={resumeHandler}>
+              RESUME
+            </button>
+          )}
 
-        <button
-          className="timer-button"
-          onClick={resetHandler}
-          disabled={!isRunning && !isStop}
-        >
-          RESET
-        </button>
+          <button
+            className="timer-button"
+            onClick={resetHandler}
+            disabled={!isRunning && !isStop}
+          >
+            RESET
+          </button>
+        </div>
       </div>
       <hr className="my-5" />
     </Fragment>
