@@ -1,8 +1,7 @@
 import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./LandingPage.scss";
-import TitleImage from "../../Assets/Images/mood-reader-image.gif";
-import TeaLeaves from "../../Assets/Images/tealeaves.jpg";
+import Title from "../../Assets/Images/Mindful Mood.png";
 
 const LandingPage: React.FunctionComponent = () => {
   const navigate = useNavigate();
@@ -22,14 +21,14 @@ const LandingPage: React.FunctionComponent = () => {
 
   return (
     <div className="landing">
-      <img src={TeaLeaves} alt="teacup" className="landing-image"></img>
-      <h1 className="landing-header">Mood Reader</h1>
-      <h2 className="landing-subheader">Enter your name to begin.</h2>
+      <img  src={Title}alt="teacup" className="landing-image"></img>
+      {/* <h1 className="landing-header">Mood Reader</h1> */}
+      <h2 className="landing-subheader">Enter your name to get started.</h2>
       <div className="landing-textbox">
         <form className="landing-form" onSubmit={handleFormSubmit}>
           <input className="landing-input" type="text" ref={nameRef} />
           <button className="landing-button" type="submit">
-            Submit
+            Begin
           </button>
         </form>
       </div>
