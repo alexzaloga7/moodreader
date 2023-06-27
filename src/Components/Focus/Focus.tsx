@@ -1,12 +1,13 @@
 import "./Focus.scss";
 import moods from "../../Data/moods.json";
 import FocusImage from "../../Assets/Images/focusimage.svg";
+import Timer from "../Timer/Timer";
 
 const Focus: React.FC = () => {
   return (
     <section className="focus">
       <h2 className="focus-header">Focus</h2>
-
+      <Timer />
       <img
         src={FocusImage}
         alt="Focus Meditation Image"

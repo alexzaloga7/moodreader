@@ -1,0 +1,20 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
+.time {
+  text-align: center;
+  font-size: 4rem;
+  border-radius: 50%;
+  width: 13rem;
+  height: 13rem;
+  border: 2px solid rgb(202, 141, 243);
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
