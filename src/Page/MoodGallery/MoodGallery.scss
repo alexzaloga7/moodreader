@@ -1,18 +1,168 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/variables" as *;
+
+.mood-gallery{
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  margin:0rem;
+  // background-color:#F8F2E7;
+}
+
+
 .mood-options {
+  display:flex;
+  flex-direction:column;
+  margin:auto;
+
+  @include tablet{
   display: flex;
-  flex-direction: row; /* Change flex-direction to row */
+  flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: center;
+  align-items:center;
+  max-width:778px;
+  }
+
+  @include desktop{
+    flex-wrap:nowrap;
+    max-width:none;
+    
+  }
 }
 
 .mood-button {
   height: 9rem;
   margin: 1rem;
-  width: 12rem;
+  width: 18rem;
   border-radius: 0.5rem;
-  background-color: white;
+  box-shadow:grey 2px;
+  border:none;
+  font-size:1.5rem;
+  font-family:Glacial Indifference;
+  font-weight:600;
+
+  @include tablet{
+    width:16rem;
+    height:11rem;
+    padding:1rem;
+    justify-content:center;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:0.5rem;
+    font-size:1.7rem;
+  }
+
+  @include desktop{
+    width:18rem;
+    height:12rem;
+    font-size:1.8rem;
+  }
+ 
+  
+}
+
+.mood-description{
+  font-size:1rem;
+  color:black;
+  margin:0.25rem;
+  font-weight:400;
+  font-style:italic;
+
+  @include tablet{
+    font-size:1.2rem;
+  }
+
+  @include desktop{
+    font-size:1.4rem;
+  }
+}
+
+.mood-header{
+  font-family:Glacial Indifference;
+  font-size:2rem;
+  font-weight:600;
+  text-align:left;
+  display:flex;
+  margin-left:2rem;
+  justify-content: center;
+  align-items: center;
+
+  @include tablet{
+  margin-bottom:2rem;
+  font-size:2.5rem;
+  }
+
+  @include desktop{
+    font-size:3rem;
+  }
+}
+
+.mood-subheader{
+  font-family:Glacial Indifference;
+  font-size:1.5rem;
+  font-weight:400;
+  text-align:center;
+  margin-bottom:2rem;
+
+  @include tablet{
+    margin-bottom:3rem;
+    font-size:1.7rem;
+  }
+
+  @include desktop{
+    font-size:2rem;
+    margin-bottom:4rem;
+  }
+}
+
+#focus{
+  background-color:#F67B01;
+}
+
+#relax{
+  background-color:#C5EAF3;
+}
+
+#energize{
+  background-color:#FA3553;
+}
+
+#balance{
+  background-color:#109339;
+}
+
+.main-image{
+width:100px;
+
+@include tablet{
+  width:200px;
+}
+}
+
+.headercontainer{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  gap:2rem;
+  margin-bottom:2rem;
+
+  @include tablet{
+    justify-content: center;
+    gap:4rem;
+  }
+}
+
+.icon{
+width:30px;
+margin:0px;
+
+  @include tablet{
+  width:40px;
+  margin:0px;
+  padding:0px;
+  }
 }
