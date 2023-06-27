@@ -4,6 +4,7 @@ import LandingPage from "./Page/LandingPage/LandingPage";
 import MoodGallery from "./Page/MoodGallery/MoodGallery";
 import MoodSummary from "./Page/MoodSummary/MoodSummary";
 import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
 import "./App.scss";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/moodgallery" element={<MoodGallery />} />
           <Route path="/moodsummary" element={<MoodSummary />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

@@ -3,7 +3,7 @@ import "../Footer/Footer.scss";
 const Footer: React.FC = () => {
   return (
     <div className="footer">
-      <h1>Welcome to my app!</h1>
+      <p className="footer-description">Developed by Alex Zaloga & Tara Wiedeman</p>
     </div>
   );
 };
