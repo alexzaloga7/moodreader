@@ -7,8 +7,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
+  width:100vw;
   font-family:Glacial Indifference;
+  background-color:#5E18EB;
+  color:#FFDE5A;
+  
   
 }
 
@@ -18,8 +22,13 @@
 }
 
 .landing-subheader {
-  font-size: 1.5rem;
   font-weight:400;
+  font-size:1rem;
+
+  @include tablet{
+  font-size: 1.5rem;
+  }
+  
 }
 
 .landing-form {
@@ -34,18 +43,30 @@
   width: 13rem;
   height: 2rem;
   border: none;
-  border-bottom: 1.5px solid grey;
-  text-align: center; /* Add this line */
-  background-color: white; /* Add this line to set the background to white */
+  border-bottom: 3px solid #FFDE5A;
+  text-align: center; 
+  background-color: #5E18EB;
+  color: #FFDE5A;
+  font-family:Glacial Indifference;
+  font-size:1rem;
+  
+  @include tablet{
+  font-size:1.3rem;
+  }
 }
 
 .landing-input:focus {
   outline: none;
   border: none;
   border-bottom: 1.5px solid transparent;
-  border-image: linear-gradient(to right, #BE4C44, #FFCDBF) 1;
+  border-image: linear-gradient(to right, #FFDE5A, #FFCDBF) 1;
   font-family:Glacial Indifference;
-  font-size:1.5rem;
+  color: #FFDE5A;
+  font-size:1rem;
+
+  @include tablet{
+  font-size:1.3rem;
+  }
 }
 .landing-button {
   margin-bottom: 2rem;
@@ -53,15 +74,23 @@
   height: 2.5rem;
   border-radius: 0.5rem;
   padding: 0.45rem;
-  background-color: white;
+  background-color: #FFDE5A;
+  color:black;
   border: 1.5px solid grey;
   font-family:Glacial Indifference;
+  font-size:1rem;
 }
 
 .landing-image{
   margin:0rem;
-  height:18rem;
-  width: 100vw;
+  height:15rem;
+  width: 17rem;
   
+  @include tablet{
+    
+      height:20rem;
+      width: 22rem;
+      
+  }  
 
 }
