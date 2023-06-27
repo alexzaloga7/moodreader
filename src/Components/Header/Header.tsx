@@ -1,9 +1,11 @@
 import "../Header/Header.scss";
+import logo from "../../Assets/Images/MM.png";
+import { NavLink } from "react-router-dom";
 
 const Header: React.FC = () => {
   return (
     <div className="header">
-      <h1>Welcome to my app!</h1>
+     <NavLink to="/"> <img src={logo} className="logo" alt="logo"></img></NavLink>
     </div>
   );
 };
