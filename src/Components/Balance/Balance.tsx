@@ -1,7 +1,7 @@
 import "./Balance.scss";
 import { useState } from "react";
 import moods from "../../Data/moods.json";
-import BalanceImage from "../../Assets/Images/balance.svg";
+import BalanceImage from "../../Assets/Images/balancesummary.svg";
 import Timer from "../Timer/Timer";
 // import MusicPlayerFrame from "../../Assets/Images/Untitled design (26).svg";
 

@@ -2,7 +2,7 @@ import "./Focus.scss";
 import { useState } from "react";
 
 import moods from "../../Data/moods.json";
-import FocusImage from "../../Assets/Images/focusimage.svg";
+import FocusImage from "../../Assets/Images/focussummary.svg";
 import Timer from "../Timer/Timer";
 // import MusicPlayerFrame from "../../Assets/Images/Untitled design (26).svg";
 

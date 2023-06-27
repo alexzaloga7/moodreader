@@ -1,7 +1,7 @@
 import "./Relax.scss";
 import { useState } from "react";
 import moods from "../../Data/moods.json";
-import RelaxImage from "../../Assets/Images/relax.svg";
+import RelaxImage from "../../Assets/Images/relaxsummary.svg";
 import Timer from "../Timer/Timer";
 // import MusicPlayerFrame from "../../Assets/Images/Untitled design (26).svg";
 

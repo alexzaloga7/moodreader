@@ -1,7 +1,7 @@
 import "./Energize.scss";
 import { useState } from "react";
 import moods from "../../Data/moods.json";
-import EnergizeImage from "../../Assets/Images/energize.svg";
+import EnergizeImage from "../../Assets/Images/energizesummary.svg";
 import Timer from "../Timer/Timer";
 // import MusicPlayerFrame from "../../Assets/Images/Untitled design (26).svg";
 
