@@ -8,6 +8,7 @@ const Focus: React.FC = () => {
     <section className="focus">
       <h2 className="focus-header">Focus</h2>
       <Timer />
+      <p>{moods[0].meditation}</p>
       <img
         src={FocusImage}
         alt="Focus Meditation Image"

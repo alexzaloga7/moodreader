@@ -1,22 +1,25 @@
 [
   {
     "mood": "focus",
-    "image": "",
+    "meditation":"Close your eyes and take a deep breath. Feel the sensation of your breath filling your lungs. With each exhale, release any scattered thoughts or distractions. Allow your focus to settle on the present moment. As you continue to breathe, visualize a single point of light or a simple object in your mind's eye. Keep your attention fixed on this point, letting it become the center of your awareness. If your mind wanders, gently bring it back to this point of focus. Stay with this practice for a few minutes, nurturing your ability to remain fully present and centered.",
     "quote": "Embrace the power of single-pointed attention, for it is the gateway to unlocking your full potential.",
     "song": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/860324063&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
   },
   {
     "mood": "relax",
+    "meditation":"Find a comfortable position and gently close your eyes. Take a moment to connect with your breath, feeling the rhythm of your inhales and exhales. With each breath, imagine a wave of relaxation washing over your body, starting from the top of your head and flowing down to your toes. Feel the tension melting away, replaced by a deep sense of calm and tranquility. As you continue to breathe, let go of any worries or stress, allowing yourself to fully surrender to the present moment. Stay in this state of deep relaxation for a few minutes, savoring the peace that surrounds you.",
     "quote": "Unwind and let the worries of the day melt away.",
     "song": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/145707374&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
   },
   {
     "mood": "energize",
+    "meditation":"Sit in a comfortable position and take a few deep, invigorating breaths. With each inhale, imagine a vibrant, radiant energy entering your body, filling you with vitality and strength. Feel this energy spreading from your core to every cell, awakening and revitalizing you. As you exhale, visualize any fatigue or stagnation leaving your body, replaced by a renewed sense of vigor and enthusiasm. With each breath, amplify the energy within you, allowing it to build and expand. Embrace the feeling of being fully alive and energized. Stay in this state of revitalization for a few moments, ready to embrace the day with a newfound sense of energy and enthusiasm.",
     "quote": "Harness the energy of possibility and let it propel you forward.",
     "song": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1553729695&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
   },
   {
     "mood": "balance",
+    "meditation":"Take a comfortable seat and gently close your eyes. Begin by focusing on your breath, observing the natural rhythm of your inhales and exhales. With each breath, imagine a sense of balance and harmony flowing through your body and mind. Visualize this balance as a delicate scale, perfectly aligned. As you continue to breathe, bring your awareness to any areas of imbalance within yourself. With each exhale, release any tension or excess energy from those areas. With each inhale, draw in a sense of equilibrium and stability. Feel your body, mind, and spirit coming into a state of equilibrium, finding the sweet spot of balance. Stay in this state of balance for a few minutes, relishing in the harmony within, and carry this sense of equilibrium with you throughout your day.",
     "quote": "Embrace equilibrium and find serenity in the ebb and flow of life.",
     "song": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1289004109&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
   }
