@@ -8,15 +8,18 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  margin-top: 20rem;
+  font-family:Glacial Indifference;
+  
 }
 
 .landing-header {
   font-size: 2.5rem;
+  font-weight:400;
 }
 
 .landing-subheader {
   font-size: 1.5rem;
+  font-weight:400;
 }
 
 .landing-form {
@@ -26,6 +29,7 @@
   align-items: center; /* Add this line */
 }
 .landing-input {
+  border-radius:0.25rem;
   margin-bottom: 3rem;
   width: 13rem;
   height: 2rem;
@@ -39,7 +43,9 @@
   outline: none;
   border: none;
   border-bottom: 1.5px solid transparent;
-  border-image: linear-gradient(to right, #00a8ff, #00fdd9) 1;
+  border-image: linear-gradient(to right, #BE4C44, #FFCDBF) 1;
+  font-family:Glacial Indifference;
+  font-size:1.5rem;
 }
 .landing-button {
   margin-bottom: 2rem;
@@ -49,4 +55,13 @@
   padding: 0.45rem;
   background-color: white;
   border: 1.5px solid grey;
+  font-family:Glacial Indifference;
+}
+
+.landing-image{
+  margin:0rem;
+  height:18rem;
+  width: 100vw;
+  
+
 }
