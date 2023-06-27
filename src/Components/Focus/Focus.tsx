@@ -1,33 +1,47 @@
 import "./Focus.scss";
+import { useState } from "react";
+
 import moods from "../../Data/moods.json";
 import FocusImage from "../../Assets/Images/focusimage.svg";
 import Timer from "../Timer/Timer";
+// import MusicPlayerFrame from "../../Assets/Images/Untitled design (26).svg";
 
 const Focus: React.FC = () => {
+  const [showText, setShowText] = useState(true);
+
+  const toggleTextVisibility = () => {
+    setShowText((prevShowText) => !prevShowText);
+  };
   return (
     <section className="focus">
-      <h2 className="focus-header">Focus</h2>
+      <div className="focus-header__container">
+        <h2 className="focus-header">F o c u s</h2>
+      </div>
+      <div className="focus-image__container">
+        <img
+          src={FocusImage}
+          alt="Focus Meditation Image"
+          className="focus-image"
+        />
+      </div>
       <Timer />
-      <p>{moods[0].meditation}</p>
-      <img
-        src={FocusImage}
+
+      {/* <img
+        src={MusicPlayerFrame}
         alt="Focus Meditation Image"
-        className="focus-image"
-      />
-      <h3 className="focus-quote">
-        Train your mind to be a fortress of concentration, impervious to
-        distractions.
-      </h3>
-      <div>
+        className="focus-imageplayer"
+      /> */}
+      <div className="focus-musicplayer__border"></div>
+      <div className="focus-musicplayer">
         <iframe
-          className="focus-song"
-          width="100%"
-          height="166"
+          id="soundCloudPlayer"
+          width="20%"
+          height="90"
           scrolling="no"
           frameBorder="no"
           allow="autoplay"
-          src={moods[0].song}
-        />
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1367255443&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        ></iframe>
         <div
           style={{
             fontSize: "10px",
@@ -38,28 +52,33 @@ const Focus: React.FC = () => {
             whiteSpace: "nowrap",
             textOverflow: "ellipsis",
             fontFamily:
-              "Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif",
+              "Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif",
             fontWeight: 100,
+            display: "none", // Add this line to hide the div
           }}
         >
           <a
-            href="https://soundcloud.com/brunomars"
-            title="brunomars"
+            href="https://soundcloud.com/alphabrainwaves"
+            title="Alpha Brain Waves"
             target="_blank"
             style={{ color: "#cccccc", textDecoration: "none" }}
-          >
-            brunomars
-          </a>{" "}
+          ></a>{" "}
           ·{" "}
           <a
-            href="https://soundcloud.com/brunomars/talking-to-the-moon-1"
-            title="Bruno Mars - Talking to the Moon"
+            href="https://soundcloud.com/alphabrainwaves/sets/study-music-soothing-sounds-to"
+            title="Study Music: Soothing Sounds to Help Focus on Creativity & Memory Retention"
             target="_blank"
             style={{ color: "#cccccc", textDecoration: "none" }}
-          >
-            Bruno Mars - Talking to the Moon
-          </a>
+          ></a>
         </div>
+      </div>
+
+      <div className="focus-text__container">
+        <button className="focus-text__button" onClick={toggleTextVisibility}>
+          {showText ? "Hide Text" : "Show Text"}
+
+          {showText && <p className="focus-text">{moods[0]?.meditation}</p>}
+        </button>
       </div>
     </section>
   );

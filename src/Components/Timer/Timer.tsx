@@ -72,34 +72,25 @@ export default function Timer(): JSX.Element {
           {currentSeconds}
         </div>
         {!isRunning && !isStop && (
-          <button
-            onClick={startHandler}
-            className="btn btn-primary btn-lg inline me-3"
-          >
+          <button className="timer-button" onClick={startHandler}>
             START
           </button>
         )}
         {isRunning && (
-          <button
-            onClick={stopHandler}
-            className="btn btn-danger btn-lg inline me-3"
-          >
+          <button className="timer-button" onClick={stopHandler}>
             STOP
           </button>
         )}
 
         {isStop && (
-          <button
-            onClick={resumeHandler}
-            className="btn btn-success btn-lg inline me-3"
-          >
+          <button className="timer-button" onClick={resumeHandler}>
             RESUME
           </button>
         )}
 
         <button
+          className="timer-button"
           onClick={resetHandler}
-          className="btn btn-outline-secondary btn-lg inline"
           disabled={!isRunning && !isStop}
         >
           RESET

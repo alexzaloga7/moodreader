@@ -4,17 +4,17 @@
 
 .time {
   text-align: center;
-  font-size: 4rem;
+  font-size: 1.5rem;
   border-radius: 50%;
-  width: 13rem;
-  height: 13rem;
-  border: 2px solid rgb(202, 141, 243);
-  padding-top: 4rem;
+  width: 18rem;
+  // border: 2px solid rgb(236, 123, 63);
+  // background-color: rgba(252, 104, 24, 0.8);
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 
-button {
-  margin-left: 2rem;
-  margin-top: 1rem;
+.timer-button {
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
 }
