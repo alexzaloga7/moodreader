@@ -6,16 +6,37 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem;
+  margin: 0rem;
+  background-color: #ffffff;
+}
+
+.focus-header__container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .focus-header {
   font-size: 2rem;
-  margin-top: 8rem;
+  display: flex;
+}
+
+.focus-image__container {
+  border: 2px solid rgb(236, 123, 63);
+  background-color: rgba(252, 104, 24, 0.8);
+  border-radius: 50%;
+  width: 20rem;
+  height: 20em;
+  display: flex;
+  justify-content: center;
 }
 
 .focus-image {
   width: 15rem;
+
+  // position: relative;
+  // bottom: 20em;
+  // z-index: 0;
 }
 
 .focus-quote {
@@ -29,4 +50,40 @@
 
 .focus-recommendation {
   font-size: 1rem;
+}
+
+.focus-text {
+  border-radius: 3rem;
+  padding: 1rem;
+  margin: 0rem;
+  height: 25rem;
+  padding-top: 4rem;
+}
+
+.focus-musicplayer {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.focus-musicplayer__border {
+  border-bottom: 32px solid rgb(255, 133, 52);
+  width: 4rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  position: relative;
+  top: 9rem;
+  z-index: 1;
+}
+
+.focus-text__container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.focus-text__button {
+  background-color: #ffffff;
+  border-radius: 2rem;
 }
