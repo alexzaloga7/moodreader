@@ -1,3 +1,20 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/variables" as *;
+
+
+.footer{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    padding:1rem;
+   
+
+}
+
+.footer-description{
+    font-family: Glacial Indifference;
+    font-size:0.75rem;
+    
+
+}
