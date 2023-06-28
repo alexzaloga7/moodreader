@@ -8,28 +8,25 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width:100vw;
-  font-family:Glacial Indifference;
-  background-color:#5E18EB;
-  color:#FFDE5A;
-  margin:0rem;
-  
-  
+  width: 100vw;
+  font-family: Glacial Indifference;
+  background-color: #5e18eb;
+  color: #ffde5a;
+  margin: 0rem;
 }
 
 .landing-header {
   font-size: 2.5rem;
-  font-weight:400;
+  font-weight: 400;
 }
 
 .landing-subheader {
-  font-weight:400;
-  font-size:1rem;
+  font-weight: 400;
+  font-size: 1rem;
 
-  @include tablet{
-  font-size: 1.5rem;
+  @include tablet {
+    font-size: 1.5rem;
   }
-  
 }
 
 .landing-form {
@@ -39,20 +36,20 @@
   align-items: center; /* Add this line */
 }
 .landing-input {
-  border-radius:0.25rem;
+  border-radius: 0.25rem;
   margin-bottom: 3rem;
   width: 13rem;
   height: 2rem;
   border: none;
-  border-bottom: 3px solid #FFDE5A;
-  text-align: center; 
-  background-color: #5E18EB;
-  color: #FFDE5A;
-  font-family:Glacial Indifference;
-  font-size:1rem;
-  
-  @include tablet{
-  font-size:1.3rem;
+  border-bottom: 3px solid #ffde5a;
+  text-align: center;
+  background-color: #5e18eb;
+  color: #ffde5a;
+  font-family: Glacial Indifference;
+  font-size: 1rem;
+
+  @include tablet {
+    font-size: 1.3rem;
   }
 }
 
@@ -60,13 +57,13 @@
   outline: none;
   border: none;
   border-bottom: 1.5px solid transparent;
-  border-image: linear-gradient(to right, #FFDE5A, #FFCDBF) 1;
-  font-family:Glacial Indifference;
-  color: #FFDE5A;
-  font-size:1rem;
+  border-image: linear-gradient(to right, #ffde5a, #ffcdbf) 1;
+  font-family: Glacial Indifference;
+  color: #ffde5a;
+  font-size: 1rem;
 
-  @include tablet{
-  font-size:1.3rem;
+  @include tablet {
+    font-size: 1.3rem;
   }
 }
 .landing-button {
@@ -75,23 +72,19 @@
   height: 2.5rem;
   border-radius: 0.5rem;
   padding: 0.45rem;
-  background-color: #FFDE5A;
-  color:black;
+  background-color: #ffde5a;
+  color: black;
   border: 1.5px solid grey;
-  font-family:Glacial Indifference;
-  font-size:1rem;
+  font-family: Glacial Indifference;
+  font-size: 1rem;
 }
 
-.landing-image{
-  margin:0rem;
-  height:15rem;
-  width: 17rem;
-  
-  @include tablet{
-    
-      height:20rem;
-      width: 22rem;
-      
-  }  
+.landing-image {
+  margin: 0rem;
+  height: 30rem;
+  width: 20rem;
 
+  @include tablet {
+    width: 80rem;
+  }
 }

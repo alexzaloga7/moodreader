@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./LandingPage.scss";
-import MindfulMood from "../../Assets/Images/mindfulmood.png";
+import MindfulMood from "../../Assets/Images/heroimage.svg";
 
 const LandingPage: React.FunctionComponent = () => {
   const navigate = useNavigate();
