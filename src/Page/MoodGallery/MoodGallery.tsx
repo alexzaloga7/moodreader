@@ -1,6 +1,6 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import "./MoodGallery.scss";
-import Balance from "../../Assets/Images/moodbalance.png";
+import Balance from "../../Assets/Images/juggling.svg";
 import Focus from "../../Assets/Images/focus.png";
 import Relax from "../../Assets/Images/relax.png";
 import Revitalize from "../../Assets/Images/revitalize.png";
