@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./LandingPage.scss";
-import MindfulMood from "../../Assets/Images/heroimage.svg";
+import Mindful from "../../Assets/Images/heroimage.svg";
 
 const LandingPage: React.FunctionComponent = () => {
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ const LandingPage: React.FunctionComponent = () => {
 
   return (
     <div className="landing">
-      <img src={MindfulMood} alt="teacup" className="landing-image"></img>
+      <img src={Mindful} alt="lotusflower" className="landing-image"></img>
       {/* <h1 className="landing-header">Mood Reader</h1> */}
       <h2 className="landing-subheader">Enter your name to get started.</h2>
       <div className="landing-textbox">
